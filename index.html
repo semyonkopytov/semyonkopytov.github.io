@@ -9,7 +9,7 @@
   </head>
   <body class="mainwin">
     <h1>
-      <iframe srcdoc='<script src="itworks.js"></script>' id="newIframe" frameBorder="0" scrolling="no" onload="makeWhite()">
+      <iframe srcdoc='<script src="itworks.js"></script>' id="newIframe" frameBorder="0" scrolling="no">
       </iframe>
     </h1>
     <input type="button" value="ADD" onclick="finishIframe()">
@@ -70,13 +70,6 @@
       		newIframe.contentWindow.document.getElementById(m).style.left = leftVal[m] + 'px';
 	  	}
 	    });
-    }
-
-    //I must replace it with using css
-    //TODO: replace
-    function makeWhite(){
-      newIframe.contentWindow.document.body.style.backgroundColor = "white";
-      newIframe.contentWindow.document.body.style.margin = "0px";
     }
 
     //Func to add divs into iframe
